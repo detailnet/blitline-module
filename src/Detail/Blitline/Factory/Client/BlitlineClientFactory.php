@@ -1,6 +1,6 @@
 <?php
 
-namespace Detail\Blitline\Factory\Options;
+namespace Detail\Blitline\Factory\Client;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
