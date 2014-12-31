@@ -1,5 +1,10 @@
 # Zend Framework 2 Module for Blitline
 
+[![Build Status](https://travis-ci.org/detailnet/blitline-module.svg?branch=master)](https://travis-ci.org/detailnet/blitline-module)
+[![Coverage Status](https://img.shields.io/coveralls/detailnet/blitline-module.svg)](https://coveralls.io/r/detailnet/blitline-module)
+[![Latest Stable Version](https://poser.pugx.org/detailnet/blitline-module/v/stable.svg)](https://packagist.org/packages/detailnet/blitline-module)
+[![Latest Unstable Version](https://poser.pugx.org/detailnet/blitline-module/v/unstable.svg)](https://packagist.org/packages/detailnet/blitline-module)
+
 ## Introduction
 This module integrates [Blitline](http://www.blitline.com/) with [Zend Framework 2](https://github.com/zendframework/zf2).
 
