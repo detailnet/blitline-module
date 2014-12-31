@@ -1,0 +1,61 @@
+{
+    "name": "detailnet/blitline-module",
+    "description": "Blitline Module for Zend Framework 2",
+    "type": "library",
+    "keywords": [
+        "blitline",
+        "module",
+        "zf2"
+    ],
+    "homepage": "https://github.com/detailnet/blitline-module/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Wolf",
+            "email": "ivan.wolf@detailnet.ch"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "psr/log": "~1.0",
+        "zendframework/zend-loader": "2.*",
+        "zendframework/zend-modulemanager": "2.*",
+        "zendframework/zend-mvc": "2.*",
+        "zendframework/zend-servicemanager": "2.*",
+        "detailnet/dfw-core": "~0.1.1",
+        "detailnet/dfw-log": "~0.1.1",
+        "detailnet/blitline": "~0.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4.0",
+        "squizlabs/php_codesniffer" : "~2.0.0",
+        "phpmd/phpmd": "~2.1.3",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Detail\\Blitline\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "DetailTest\\Blitline\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "!vendor",
+            "tests",
+            "*phpunit.xml",
+            ".travis.yml",
+            "build.xml",
+            "build.properties",
+            "composer.phar"
+        ]
+    }
+}
