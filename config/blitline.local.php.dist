@@ -1,0 +1,7 @@
+<?php
+
+return array(
+    'blitline' => array(
+        'application_id' => 'your-application-id',
+    ),
+);
