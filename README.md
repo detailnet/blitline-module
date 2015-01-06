@@ -21,7 +21,7 @@ Install the module through [Composer](http://getcomposer.org/) using the followi
      ```json
      {
          "require": {
-             "detailnet/blitline-module": "0.1.*"
+             "detailnet/blitline-module": "1.x-dev"
          }
      }
      ```
