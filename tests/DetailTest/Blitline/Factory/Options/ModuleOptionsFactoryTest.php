@@ -6,7 +6,9 @@ use PHPUnit_Framework_TestCase as TestCase;
 
 use Zend\ServiceManager\ServiceManager;
 
+use Detail\Blitline\Exception;
 use Detail\Blitline\Factory\Options\ModuleOptionsFactory;
+use Detail\Blitline\Options\ModuleOptions;
 
 class ModuleOptionsFactoryTest extends TestCase
 {
@@ -14,12 +16,12 @@ class ModuleOptionsFactoryTest extends TestCase
     {
         $moduleOptions = $this->createModuleOptions(array('blitline' => array()));
 
-        $this->assertInstanceOf('Detail\Blitline\Options\ModuleOptions', $moduleOptions);
+        $this->assertInstanceOf(ModuleOptions::CLASS, $moduleOptions);
     }
 
     public function testCreateServiceThrowsExceptionForInvalidConfiguration()
     {
-        $this->setExpectedException('Detail\Blitline\Exception\ConfigException');
+        $this->setExpectedException(Exception\ConfigException::CLASS);
         $this->createModuleOptions();
     }
 

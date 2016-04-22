@@ -4,6 +4,8 @@ namespace DetailTest\Blitline;
 
 use PHPUnit_Framework_TestCase as TestCase;
 
+use Zend\Loader\StandardAutoloader;
+
 use Detail\Blitline\Module;
 
 class ModuleTest extends TestCase
@@ -24,9 +26,9 @@ class ModuleTest extends TestCase
 
         $this->assertTrue(is_array($config));
 
-        $this->assertArrayHasKey('Zend\Loader\StandardAutoloader', $config);
-        $this->assertArrayHasKey('namespaces', $config['Zend\Loader\StandardAutoloader']);
-        $this->assertArrayHasKey('Detail\Blitline', $config['Zend\Loader\StandardAutoloader']['namespaces']);
+        $this->assertArrayHasKey(StandardAutoloader::CLASS, $config);
+        $this->assertArrayHasKey('namespaces', $config[StandardAutoloader::CLASS]);
+        $this->assertArrayHasKey('Detail\Blitline', $config[StandardAutoloader::CLASS]['namespaces']);
     }
 
     public function testModuleProvidesConfig()

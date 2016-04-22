@@ -4,21 +4,23 @@ namespace DetailTest\Blitline\Options;
 
 use PHPUnit_Framework_TestCase as TestCase;
 
+use Detail\Blitline\Options\ModuleOptions;
+
 class ModuleOptionsTest extends TestCase
 {
     /**
-     * @var \Detail\Blitline\Options\ModuleOptions
+     * @var ModuleOptions
      */
     protected $options;
 
     protected function setUp()
     {
         $mockedMethods = array_diff(
-            $this->getMethods('Detail\Blitline\Options\ModuleOptions'),
+            $this->getMethods(ModuleOptions::CLASS),
             array('getApplicationId', 'setApplicationId')
         );
 
-        $this->options = $this->getMock('Detail\Blitline\Options\ModuleOptions', $mockedMethods);
+        $this->options = $this->getMock(ModuleOptions::CLASS, $mockedMethods);
     }
 
     public function testApplicationIdCanBeSet()
