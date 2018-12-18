@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'blitline' => array(
+return [
+    'blitline' => [
         'application_id' => 'your-application-id',
-    ),
-);
+    ],
+];

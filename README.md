@@ -1,4 +1,4 @@
-# Zend Framework 2 Module for Blitline
+# Zend Framework Module for Blitline
 
 [![Build Status](https://travis-ci.org/detailnet/blitline-module.svg?branch=master)](https://travis-ci.org/detailnet/blitline-module)
 [![Coverage Status](https://img.shields.io/coveralls/detailnet/blitline-module.svg)](https://coveralls.io/r/detailnet/blitline-module)
@@ -6,10 +6,10 @@
 [![Latest Unstable Version](https://poser.pugx.org/detailnet/blitline-module/v/unstable.svg)](https://packagist.org/packages/detailnet/blitline-module)
 
 ## Introduction
-This module integrates [Blitline](http://www.blitline.com/) with [Zend Framework 2](https://github.com/zendframework/zf2).
+This module integrates [Blitline](http://www.blitline.com/) with [Zend Framework](https://github.com/zendframework/zendframework).
 
 ## Requirements
-[Zend Framework 2 Skeleton Application](http://www.github.com/zendframework/ZendSkeletonApplication) (or compatible architecture)
+[Zend Framework Skeleton Application](http://www.github.com/zendframework/ZendSkeletonApplication) (or compatible architecture)
 
 ## Installation
 Install the module through [Composer](http://getcomposer.org/) using the following steps:
@@ -21,7 +21,7 @@ Install the module through [Composer](http://getcomposer.org/) using the followi
      ```json
      {
          "require": {
-             "detailnet/blitline-module": "1.x-dev"
+             "detailnet/blitline-module": "^1.0"
          }
      }
      ```
@@ -40,6 +40,3 @@ Install the module through [Composer](http://getcomposer.org/) using the followi
 
   7. Copy `vendor/detailnet/blitline-module/config/blitline.local.php.dist` into your application's
      `config/autoload` directory, rename it to `blitline.local.php` and make the appropriate changes.
-
-## Usage
-tbd
