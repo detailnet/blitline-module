@@ -1,12 +1,12 @@
 <?php
 
-namespace Detail\Blitline\Factory\Client;
+namespace Detail\Blitline\Factory;
 
 use Interop\Container\ContainerInterface;
 
 use Zend\ServiceManager\Factory\FactoryInterface;
 
-use Detail\Blitline\Client\BlitlineClient;
+use Detail\Blitline\BlitlineClient;
 use Detail\Blitline\Job\JobBuilder;
 use Detail\Blitline\Options\ModuleOptions;
 

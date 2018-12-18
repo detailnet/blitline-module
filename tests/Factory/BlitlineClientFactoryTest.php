@@ -1,15 +1,13 @@
 <?php
 
-namespace DetailTest\Blitline\Factory\Options;
+namespace DetailTest\Blitline\Factory;
 
 use Zend\ServiceManager\Factory\FactoryInterface;
 
-use Detail\Blitline\Client\BlitlineClient;
-use Detail\Blitline\Factory\Client\BlitlineClientFactory;
+use Detail\Blitline\BlitlineClient;
+use Detail\Blitline\Factory\BlitlineClientFactory;
 use Detail\Blitline\Job\JobBuilder;
 use Detail\Blitline\Options\ModuleOptions;
-
-use DetailTest\Blitline\Factory\FactoryTestCase;
 
 class BlitlineClientFactoryTest extends FactoryTestCase
 {
