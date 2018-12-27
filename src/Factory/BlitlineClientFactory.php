@@ -10,7 +10,8 @@ use Detail\Blitline\BlitlineClient;
 use Detail\Blitline\Job\JobBuilder;
 use Detail\Blitline\Options\ModuleOptions;
 
-class BlitlineClientFactory implements FactoryInterface
+class BlitlineClientFactory implements
+    FactoryInterface
 {
     /**
      * @param ContainerInterface $container
