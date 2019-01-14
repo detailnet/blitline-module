@@ -9,7 +9,7 @@ class ModuleOptions extends AbstractOptions
     /**
      * @var string|null
      */
-    private $applicationId;
+    protected $applicationId;
 
     public function getApplicationId(): ?string
     {
