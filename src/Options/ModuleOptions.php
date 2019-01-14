@@ -2,27 +2,21 @@
 
 namespace Detail\Blitline\Options;
 
-use Detail\Core\Options\AbstractOptions;
+use Zend\Stdlib\AbstractOptions;
 
 class ModuleOptions extends AbstractOptions
 {
     /**
-     * @var string
+     * @var string|null
      */
     protected $applicationId;
 
-    /**
-     * @return string
-     */
-    public function getApplicationId()
+    public function getApplicationId(): ?string
     {
         return $this->applicationId;
     }
 
-    /**
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+    public function setApplicationId(string $applicationId): void
     {
         $this->applicationId = $applicationId;
     }
